@@ -1,0 +1,33 @@
+:root { color-scheme: light; font-family: Inter, "Segoe UI", Arial, sans-serif; color: #172635; background: #f4f6f9; }
+* { box-sizing: border-box; }
+body { min-height: 100vh; margin: 0; padding: 38px 18px; display: grid; place-items: center; background: radial-gradient(circle at 50% 0, #f8dddd, transparent 34rem), #f4f6f9; }
+.panel { width: min(760px, 100%); padding: 34px clamp(20px, 5vw, 48px); border: 1px solid #e4e8ec; border-radius: 17px; background: #fff; box-shadow: 0 20px 70px #182b3d13; }
+.brand { display: flex; align-items: center; gap: 9px; color: #1d3445; font-size: 15px; font-weight: 800; }
+.brand-mark { width: 27px; height: 27px; display: grid; place-items: center; border-radius: 8px; background: #bd3030; color: white; }
+.brand-sub { margin-left: auto; color: #7d8a95; font-size: 9px; letter-spacing: 1.4px; }
+.blocked-label { margin-top: 37px; color: #b42d2d; font-size: 10px; font-weight: 800; letter-spacing: 1.8px; }
+h1 { margin: 6px 0; color: #a62222; font-size: clamp(34px, 8vw, 62px); line-height: 1.05; letter-spacing: -2px; }
+.intro { margin: 10px 0 24px; color: #62717e; font-size: 14px; }
+.score-card { min-height: 150px; padding: 22px 25px; display: flex; align-items: center; justify-content: space-between; gap: 15px; border: 1px solid #f0d7d4; border-radius: 13px; background: linear-gradient(105deg, #fff1ef, #fffafa); }
+.score-caption { color: #9c5551; font-size: 10px; font-weight: 800; letter-spacing: 1.5px; }
+#verdict { margin: 8px 0 0; color: #ac2828; font-size: 14px; font-weight: 800; }
+.score { display: flex; align-items: baseline; gap: 5px; color: #875f5d; }
+.score strong { color: #b32121; font-size: clamp(64px, 14vw, 105px); font-weight: 900; line-height: .9; letter-spacing: -7px; }
+.score span { font-size: 13px; }
+.url-box { margin-top: 16px; padding: 12px 14px; border-radius: 8px; background: #f4f6f8; }
+.url-box span { display: block; margin-bottom: 5px; color: #798792; font-size: 9px; font-weight: 800; letter-spacing: 1px; }
+.url-box code { display: block; overflow-wrap: anywhere; color: #394e5e; font: 12px/1.55 ui-monospace, Consolas, monospace; }
+.diagnostics { margin-top: 24px; }
+.diagnostics h2 { margin: 0 0 10px; font-size: 17px; letter-spacing: -.4px; }
+#reasons { margin: 0; padding: 0; display: grid; gap: 8px; list-style: none; }
+#reasons li { padding: 10px 12px; border-left: 3px solid #c33a37; border-radius: 0 6px 6px 0; background: #fff6f5; color: #586976; font-size: 12px; line-height: 1.5; }
+.empty { color: #657580; }
+.disclaimer { margin: 19px 0; color: #778590; font-size: 10px; line-height: 1.55; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; }
+button { min-height: 44px; padding: 0 16px; border-radius: 7px; font: inherit; font-size: 12px; font-weight: 800; cursor: pointer; }
+.primary { border: 1px solid #a72525; background: #b52c2c; color: white; }
+.primary:hover { background: #982222; }
+.secondary { border: 1px solid #dfe4e8; background: white; color: #465968; }
+.secondary:hover { background: #f5f7f8; }
+#error { margin: 12px 0 0; color: #a52b2b; font-size: 12px; }
+@media (max-width: 500px) { body { padding: 12px; } .panel { padding: 24px 18px; } .score-card { min-height: 125px; padding: 16px; } .actions { display: grid; } .actions button { width: 100%; } }

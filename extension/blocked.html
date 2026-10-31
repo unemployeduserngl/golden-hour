@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website blocked · ClearSignal</title>
+    <link rel="stylesheet" href="blocked.css">
+    <script src="blocked.js" defer></script>
+  </head>
+  <body>
+    <main class="panel">
+      <div class="brand"><span class="brand-mark">!</span> ClearSignal <span class="brand-sub">LINK GUARD</span></div>
+      <div class="blocked-label">NAVIGATION STOPPED</div>
+      <h1>WEBSITE BLOCKED</h1>
+      <p class="intro">ClearSignal found enough warning signals to stop this navigation.</p>
+      <section class="score-card" aria-label="Threat score">
+        <div><span class="score-caption">THREAT SCORE</span><p id="verdict">BLOCKED</p></div>
+        <div class="score"><strong id="score">—</strong><span>/ 100</span></div>
+      </section>
+      <div class="url-box"><span>BLOCKED ADDRESS</span><code id="blocked-url"></code></div>
+      <section class="diagnostics">
+        <h2>What Is Wrong With This Website</h2>
+        <ul id="reasons"></ul>
+      </section>
+      <p class="disclaimer">Automated checks can make mistakes. Proceeding will temporarily allow this site for five minutes in this browser session.</p>
+      <div class="actions">
+        <button id="back-button" class="primary" type="button">Back to Safety</button>
+        <button id="proceed-button" class="secondary" type="button">Ignore Risk &amp; Proceed Once</button>
+      </div>
+      <p id="error" role="status" hidden></p>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+body { width: 310px; margin: 0; color: #192d3c; background: #f7f9fa; font: 12px/1.45 system-ui, "Segoe UI", sans-serif; }
+main { padding: 17px; }
+header { display: flex; align-items: center; gap: 10px; padding-bottom: 14px; border-bottom: 1px solid #e4e9ec; }
+.mark { width: 30px; height: 30px; display: grid; place-items: center; border-radius: 9px; background: #148a78; color: #fff; font-weight: 900; }
+header strong, header small { display: block; }
+header strong { font-size: 14px; }
+header small { color: #71818c; font-size: 8px; font-weight: 800; letter-spacing: 1px; }
+.status { display: flex; align-items: flex-start; gap: 10px; margin: 16px 0 13px; }
+#status-dot { flex: 0 0 auto; width: 9px; height: 9px; margin-top: 4px; border-radius: 50%; background: #9aa5ad; }
+#status-dot.online { background: #1b9b70; box-shadow: 0 0 0 3px #def3e9; }
+#status-dot.offline { background: #d18421; box-shadow: 0 0 0 3px #fbefd9; }
+.status strong { font-size: 12px; }
+.status p { margin: 3px 0 0; color: #788690; font-size: 10px; }
+.note { padding: 10px; border-radius: 7px; background: #eef3f6; color: #687986; font-size: 10px; line-height: 1.5; }
+.protection-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin: 14px 0; padding: 11px; border: 1px solid #e4e9ec; border-radius: 8px; background: #fff; cursor: pointer; }
+.protection-row strong, .protection-row small { display: block; }
+.protection-row strong { color: #263c4b; font-size: 11px; }
+.protection-row small { margin-top: 3px; color: #788690; font-size: 9px; }
+#protection-toggle { width: 36px; height: 20px; margin: 0; accent-color: #148a78; cursor: pointer; }
+.stats { display: flex; justify-content: space-between; margin: 14px 0; color: #697984; font-size: 10px; }
+.stats strong { color: #263c4b; }
+.trusted-entry { display: flex; gap: 6px; margin-top: 6px; }
+#trusted-form > label { color: #697984; font-size: 10px; font-weight: 700; }
+#trusted-domain { min-width: 0; flex: 1; padding: 8px; border: 1px solid #dce4e8; border-radius: 6px; font: inherit; }
+.trusted-entry button { width: auto; min-height: 32px; padding: 0 11px; }
+#trusted-domains { margin: 8px 0; padding: 0; list-style: none; }
+#trusted-domains li { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 6px 0; border-top: 1px solid #e8edef; color: #526674; font-size: 10px; }
+#trusted-domains li button { width: auto; min-height: 25px; padding: 0 7px; color: #8d3939; font-size: 10px; }
+#trusted-error, #rule-error { color: #a52b2b; font-size: 10px; }
+.rules-link { display: block; margin: 10px 0; color: #147c6c; font-weight: 700; text-decoration: none; font-size: 10px; }
+button { width: 100%; min-height: 35px; border: 1px solid #dce4e8; border-radius: 6px; background: #fff; color: #314957; font: inherit; font-weight: 700; cursor: pointer; }

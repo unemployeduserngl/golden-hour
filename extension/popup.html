@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ClearSignal Link Guard</title>
+    <link rel="stylesheet" href="popup.css">
+    <script src="popup.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header><span class="mark">✓</span><div><strong>ClearSignal</strong><small>LINK GUARD</small></div></header>
+      <section class="status"><span id="status-dot"></span><div><strong id="status-title">Checking local scanner…</strong><p id="status-detail">Backend: 127.0.0.1:5000</p></div></section>
+      <label class="protection-row" for="protection-toggle">
+        <span><strong>Real-time click protection</strong><small>Scan links before they open</small></span>
+        <input id="protection-toggle" type="checkbox" role="switch" aria-label="Enable real-time click protection">
+      </label>
+      <p class="note">Confirmed malicious domains are blocked at the navigation layer. New links are scanned before click navigation.</p>
+      <div class="stats"><span>Blocked scan events in this tab</span><strong id="tab-blocked-count">0</strong></div>
+      <div class="stats"><span>Blocked scan events this install</span><strong id="global-blocked-count">0</strong></div>
+      <div class="stats"><span>Cached safe links</span><strong id="cache-count">0</strong></div>
+      <form id="trusted-form">
+        <label for="trusted-domain">Trust a domain</label>
+        <div class="trusted-entry">
+          <input id="trusted-domain" type="text" autocomplete="off" placeholder="example.com" required>
+          <button type="submit">Add</button>
+        </div>
+        <p id="trusted-error" role="status" hidden></p>
+      </form>
+      <ul id="trusted-domains" aria-label="Trusted domains"></ul>
+      <p id="rule-error" role="status" hidden></p>
+      <a class="rules-link" href="http://127.0.0.1:5000/api/blocklist/hosts" target="_blank">Download local block rules</a>
+      <button id="refresh" type="button">Check backend again</button>
+    </main>
+  </body>
+</html>
